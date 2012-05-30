@@ -1,0 +1,33 @@
+{
+	"name": "connect-imager",
+	"description": "Connect middleware for resize images",
+	"maintainers": [
+		{
+			"name": "Dmitriy Kiyatkin",
+			"web": "https://github.com/dkiyatkin/connect-imager"
+		}
+	],
+	"version": "0.0.1",
+	"keywords" : [
+		"connect-imager"
+	],
+	"repository": {
+		"type" : "git",
+		"url" : "git://github.com/dkiyatkin/connect-imager.git"
+	},
+	"engines": {
+		"node": ">=0.6.0"
+	},
+	"dependencies": {
+		"connect": ">=2.0.1"
+	},
+	"bugs": {
+		"url" : "http://github.com/dkiyatkin/connect-imager/issues"
+	},
+	"licenses" : [
+		{
+			"type": "MIT",
+			"url" : "http://github.com/dkiyatkin/connect-imager/raw/master/LICENSE"
+		}
+	]
+}
