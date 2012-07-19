@@ -27,7 +27,7 @@ module.exports = function(options) {
 	};
 	var __imager = function(cache_img_path, orig_img_path, orig_img_stats, req, next) {
 		//console.log(req.url);
-		path.exists(cache_img_path, function(exists) {
+		fs.exists(cache_img_path, function(exists) {
 			if (!exists) {
 				_imager(orig_img_path, cache_img_path, req, next);
 			} else {
@@ -48,12 +48,12 @@ module.exports = function(options) {
 			var pathname = decodeURI(path.join('/',req.url_parse.pathname));
 			// если такое изображение есть, взять с параметрами
 			var orig_img_path = path.join(root, pathname);
-			path.exists(orig_img_path, function(exists) {
+			fs.exists(orig_img_path, function(exists) {
 				if (exists) {
 					fs.stat(orig_img_path, function(err, orig_img_stats) {
 						req.url = path.join(cache_dir, pathname.slice(1).replace(/\//g, '|')); //part cache url
 						var image_dir = path.join(root, req.url);
-						path.exists(image_dir, function(exists) {
+						fs.exists(image_dir, function(exists) {
 							var image = '';
 							if (req.query.w) { image += 'w'+req.query.w; }
 							if (req.query.h) { image += 'h'+req.query.h; }
