@@ -1,33 +1,45 @@
 {
-	"name": "connect-imager",
-	"description": "Connect middleware for resize images",
-	"maintainers": [
-		{
-			"name": "Dmitriy Kiyatkin",
-			"web": "https://github.com/dkiyatkin/connect-imager"
-		}
-	],
-	"version": "0.0.2",
-	"keywords" : [
-		"connect-imager"
-	],
-	"repository": {
-		"type" : "git",
-		"url" : "git://github.com/dkiyatkin/connect-imager.git"
-	},
-	"engines": {
-		"node": ">=0.6.0"
-	},
-	"dependencies": {
-		"connect": ">=2.0.1"
-	},
-	"bugs": {
-		"url" : "http://github.com/dkiyatkin/connect-imager/issues"
-	},
-	"licenses" : [
-		{
-			"type": "MIT",
-			"url" : "http://github.com/dkiyatkin/connect-imager/raw/master/LICENSE"
-		}
-	]
+  "name": "connect-imager",
+  "description": "Connect middleware for resize images",
+  "version": "0.0.5",
+  "homepage": "https://github.com/dkiyatkin/connect-imager",
+  "author": {
+    "name": "Dmitriy Kiyatkin",
+    "email": "info@dkiyatkin.com",
+    "url": "dkiyatkin.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dkiyatkin/connect-imager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dkiyatkin/connect-imager/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dkiyatkin/connect-imager/raw/master/LICENSE"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.17"
+  },
+  "dependencies": {
+    "connect": ">=2.14.3",
+    "imagemagick": "^0.1.3",
+    "mime": "^1.2.11",
+    "mkdirp": "^0.3.5",
+    "querystring": "^0.2.0"
+  },
+  "keywords": [
+    "connect",
+    "imager"
+  ]
 }
